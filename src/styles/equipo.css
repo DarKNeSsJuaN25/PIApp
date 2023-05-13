@@ -1,0 +1,14 @@
+.informacion{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    margin-bottom: 2rem;
+}
+
+.info-persona{
+    width: 70%;
+}
+
+.img-persona{
+    padding-left: 100px;
+}
