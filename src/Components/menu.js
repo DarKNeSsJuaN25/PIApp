@@ -10,17 +10,46 @@ const Menu = () =>{
             <h3>Una manera interactiva de aprender</h3>
             <section className="descripcion">
                 <div className="descripcion-texto">
-                    ProyectName es una iniciativa propuesta para el aprendizaje del sector empresarial de una manera didactica y divertida.
-                    Usando un juego de mesa, los jugadores aprenderan a analizar, meditar, medir y resolver experiencias que involucran la
-                    construccion de obras en el Peru.
+                    En la actualidad la Universidad de Ingeniería y Tecnología(UTEC),
+                    dentro de su malla curricular ofrece cursos como “Lean Construction” o 
+                    “Planeamiento de Proyectos de Construcción” en los cuales se tratan de aplicar tópicos del PMBOK. 
+                    El principal problema de la enseñanza aplicando el PMBOK en UTEC, se debe al uso de una metodología de aprendizaje antigua y/o obsoleta.
                 </div>
                 <div className="descripcion-valor">
-                    
+                    ProyectName es una iniciativa propuesta para el aprendizaje de gestion de proyectos de manera didactica y divertida.
+                    Utilizando el sector de construccion, los jugadores aprenderan a planificar, ejecutar y controlar toda el area mencionada. 
                 </div>
-            <section className="imagenes">
-                Imagenes
             </section>
-            </section>
+                <section className="producto">
+                    El juego trata de lo siguiente:
+                    <div className="personajes">
+                    Personajes:
+                    <ul className="personajes-lista">
+                        <li>Peon</li>
+                        <li>Oficial</li>
+                        <li>Operario</li>
+                        <li>Operario de equipo mediano</li>
+                        <li>Operario topografico</li>
+                        <li>Operador de equipo pesado</li>
+                        <li>Obrero primicio</li>
+                        <li>Obrero experto</li>
+                        <li>Promotor</li>
+                        <li>Maestro de obra</li>
+                        <li>Arquitecta</li>
+                        <li>Control de calidad</li>
+                    </ul>
+                    <div className="personajes-imagenes">
+                        <img src={require("../img/obrero_primicio.png")} alt="i"></img>
+                        <img src={require("../img/obrero_experto.png")} alt="i2"></img>
+                    </div>
+                    </div>
+                    <div className="cartas">
+
+                    </div>
+                </section>
+                <section className="imagenes">
+                    Imagenes
+                </section>
             <section className="arquetipos">
                 <div className="mision">
                     <p>Mision</p>
@@ -28,7 +57,7 @@ const Menu = () =>{
                 </div>
                 <div className="vision">
                     <p>Vision</p>
-                    Ser un proyecto usado y valorado en todo el pais
+                    Aprobacion y reconocimiento en instituciones publicas y privadas alrededor del pais.
                 </div>
                 <div className="valores">
                     <p>Valores</p>
@@ -42,7 +71,7 @@ const Menu = () =>{
                     <Equipo nombre="Marcos Oyacuche" imagen="miguel" descripcion="Estudiante de ingenieria civil"/>
             </section>
             <footer className="foot">
-                <p>&copy; 2022</p>
+                <p>&copy; 2023</p>
                 <ul className="foot-info">
                     <li><a href="mailto:juan.laredo@utec.edu.pe">Contactar</a></li>
                     <li><a>991174346</a></li>

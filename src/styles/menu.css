@@ -1,5 +1,4 @@
 h2,h3{
-    background-color: #333333;
     color: #e3f2fd;
     margin: 0;
     height: 70px;
@@ -14,9 +13,32 @@ h2,h3{
 .descripcion-texto{
     width: 50%;
     text-align: justify;
+    margin-right: 20px;
+}
+.descripcion-valor{
+    width: 50%;
+    text-align: justify;
+    margin-left: 20px;
 }
 .descripcion-imagenes{
     width: 50%;
+}
+
+.personajes{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+.personajes-lista{
+    width: 75%;
+}
+
+.personajes-imagenes{
+
+}
+
+ul{
+    list-style: none;
 }
 
 .arquetipos{
@@ -31,7 +53,7 @@ h2,h3{
     border-radius: 20px;
     border-color: #333333;
     border: 3px solid #333333;
-    background-color:rgb(255, 228, 196);
+    background-color:rgb(249, 205, 151);
     flex: 1;
     flex-basis: 0;
     margin: 10px;
@@ -45,7 +67,7 @@ h2,h3{
     border-radius: 20px;
     border-color: #333333;
     border: 3px solid #333333;
-    background-color:bisque;
+    background-color:rgb(249, 205, 151);
     flex: 1;
     flex-basis: 0;
     margin: 10px;
@@ -59,7 +81,7 @@ h2,h3{
     border-radius: 20px;
     border-color: #333333;
     border: 3px solid #333333;
-    background-color:bisque;
+    background-color:rgb(249, 205, 151);
     flex: 1;
     flex-basis: 0;
     margin: 10px;
