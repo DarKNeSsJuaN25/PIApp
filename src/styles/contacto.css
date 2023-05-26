@@ -1,0 +1,61 @@
+.contenedor-principal{
+    position: relative;
+}
+
+.contacto-imagen-1{
+    width: 100%;
+    display: flex;
+    left: 50%;
+    height: 740px;
+}
+
+.contenedor-principal > h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 8rem;
+    color: #292D32;
+}
+.contenedor-secundario-1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+.forms > *{
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+.forms > input{
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 3rem;
+}
+
+#mensaje{
+    height: 70px;
+}
+
+.forms > button{
+    margin-top: 2rem;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.medios-comunicacion{
+    flex: 1;
+    margin-top: 1rem;
+}
+.medios-de-comunicacion-2 > p {
+  text-align: left;
+}
+

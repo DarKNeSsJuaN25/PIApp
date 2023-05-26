@@ -1,0 +1,25 @@
+.informacion{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 0 10px;
+    margin: 0;
+}
+.descripcion{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5rem;
+}
+.descripcion-texto{
+    width: 50%;
+    text-align: justify;
+    margin-right: 20px;
+}
+.descripcion-valor{
+    width: 50%;
+    text-align: justify;
+    margin-left: 20px;
+}
+

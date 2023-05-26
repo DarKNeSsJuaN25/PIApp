@@ -1,104 +1,40 @@
-h2,h3{
-    color: #e3f2fd;
-    margin: 0;
-    height: 70px;
-    padding-top: 10px;
+.container-1{
+    position: relative;
+}
+.imagen-1{
+    width: 100%;
+    height: 753px;
+    display: block;
 }
 
-.descripcion{
-    display: flex;
-    flex-direction: row;
-    padding-top: 5rem;
+.texto-1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 2rem;
 }
-.descripcion-texto{
-    width: 50%;
-    text-align: justify;
-    margin-right: 20px;
+.texto-1 > h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#6E6563;    
 }
-.descripcion-valor{
-    width: 50%;
-    text-align: justify;
-    margin-left: 20px;
-}
-.descripcion-imagenes{
-    width: 50%;
-}
+.texto-1 > h3{
+    color: #494848;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-.personajes{
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-}
-.personajes-lista{
-    width: 75%;
-}
-
-.personajes-imagenes{
-
-}
-
-ul{
-    list-style: none;
-}
-
-.arquetipos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px;
-}
-.mision{
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-    border-color: #333333;
-    border: 3px solid #333333;
-    background-color:rgb(249, 205, 151);
-    flex: 1;
-    flex-basis: 0;
-    margin: 10px;
-}
-.mision:hover{
-    background-color: rgb(242, 203, 156);
-}
-.vision{
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-    border-color: #333333;
-    border: 3px solid #333333;
-    background-color:rgb(249, 205, 151);
-    flex: 1;
-    flex-basis: 0;
-    margin: 10px;
-}
-.vision:hover{
-    background-color: rgb(242, 203, 156);
-}
-.valores{
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-    border-color: #333333;
-    border: 3px solid #333333;
-    background-color:rgb(249, 205, 151);
-    flex: 1;
-    flex-basis: 0;
-    margin: 10px;
-}
-.valores:hover{
-    background-color: rgb(242, 203, 156);
 }
 .foot{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #333333;
+    background-color: #263033;
     color: #e3f2fd;
     height: 100px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 5rem;
 }
 
 .foot-info{
@@ -108,46 +44,58 @@ ul{
     align-items:stretch;
 }
 
-
-
-a {
-  color: rgb(0, 99, 228);
-  font-size: 1rem;
-  text-decoration: none;
-  margin-top: 1em;
-  display: inline-block;
-  font-weight: bold;
-  padding: .3em;
-  margin-left: -.5em;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+.nosotros{
+    display: flex;
+    flex-direction: column;
 }
 
-a:before, a:after {
-  position: absolute;
-  content: '';
-  border-bottom: 3px solid rgb(0, 99, 228);
-  border-radius: 1em;
-  bottom: .3em;
-  transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+.nosotros-2{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    align-items: center;
+    justify-content: center;
+}
+.imagen-2{
+    margin-left: 5rem;
+    margin-top: 7rem;
+    width: 0%;
+    height: 70%;
+    flex: 1;
+    border-radius: 20px;
+}
+.nosotros-titulo{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.nosotros-3{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items : center;
+    justify-content: center;
 }
 
-a:before {
-  width: 1em;
-  transform-origin: left;
+.nosotros-3 >p{
+    padding-left: 30px;
 }
 
-a:after {
-  width: 82%;
-  left: 1em;
-  transform: translateX(110%);
+.mas-informacion{
+    border-radius: 20px;
+    height: 50px;
+    width: 150px;
+    background-color: darkorange;
+    font-family: "Courier New", monospace;
+    border: 5px;
+}
+.mas-informacion:hover{
+    background-color: rgb(255, 179, 86);
+    transition: 0.2s ease;
 }
 
-a:hover:before {
-  transform: scaleX(0.3);
-}
 
-a:hover:after {
-  transform: translateX(0);
-}
+
 
