@@ -1,0 +1,27 @@
+h2,h3{
+    color: #e3f2fd;
+    margin: 0;
+    height: 70px;
+    padding-top: 10px;
+}
+
+.producto{
+    text-align: left;
+}
+
+.contenido-personajes{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+.personajes-lista{
+    width: 75%;
+}
+
+.personajes-imagenes{
+
+}
+
+ul{
+    list-style: none;
+}

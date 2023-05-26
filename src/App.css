@@ -3,5 +3,8 @@
   color: white;
 }
 body{
-  background-image: url("../src/img/fondo.jpg");
+  background-color: #212121;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
