@@ -13,6 +13,7 @@ const NavBar = () =>{
                     <Link to='/equipo' onClick = {closeMenu}>Equipo</Link>
                     <Link to='/usestory' onClick = {closeMenu}>Use Story</Link>
                     <Link to='/contacto' onClick = {closeMenu}>Contacto</Link>
+                    <Link to='/jugar' onClick = {closeMenu}>Jugar</Link>
                 </div>
 
             </nav>

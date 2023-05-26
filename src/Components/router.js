@@ -5,6 +5,7 @@ import Equipo from "./equipo"
 import UseStory from "./usestory";
 import Contacto from "./contacto";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Jugar from "./jugar";
 
 const Router = () => {
     return(
@@ -16,6 +17,8 @@ const Router = () => {
                     <Route path="/equipo" element={<Equipo/>}/>
                     <Route path="/usestory" element={<UseStory/>}/>
                     <Route path="/contacto" element={<Contacto/>}/>
+                    <Route path="/jugar" element={<Jugar/>}/>
+
                 </Routes>
             </BrowserRouter>
         </div>

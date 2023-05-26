@@ -1,0 +1,18 @@
+.jugar-contenedor-1 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5rem;
+}
+
+.registro{
+    flex: 1;
+    margin-left: 5rem;    
+}
+
+.input{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    position:static;
+}
