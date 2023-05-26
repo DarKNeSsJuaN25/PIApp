@@ -1,0 +1,153 @@
+h2,h3{
+    color: #e3f2fd;
+    margin: 0;
+    height: 70px;
+    padding-top: 10px;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5rem;
+}
+.descripcion-texto{
+    width: 50%;
+    text-align: justify;
+    margin-right: 20px;
+}
+.descripcion-valor{
+    width: 50%;
+    text-align: justify;
+    margin-left: 20px;
+}
+.descripcion-imagenes{
+    width: 50%;
+}
+
+.personajes{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+.personajes-lista{
+    width: 75%;
+}
+
+.personajes-imagenes{
+
+}
+
+ul{
+    list-style: none;
+}
+
+.arquetipos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+.mision{
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: #333333;
+    border: 3px solid #333333;
+    background-color:rgb(249, 205, 151);
+    flex: 1;
+    flex-basis: 0;
+    margin: 10px;
+}
+.mision:hover{
+    background-color: rgb(242, 203, 156);
+}
+.vision{
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: #333333;
+    border: 3px solid #333333;
+    background-color:rgb(249, 205, 151);
+    flex: 1;
+    flex-basis: 0;
+    margin: 10px;
+}
+.vision:hover{
+    background-color: rgb(242, 203, 156);
+}
+.valores{
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: #333333;
+    border: 3px solid #333333;
+    background-color:rgb(249, 205, 151);
+    flex: 1;
+    flex-basis: 0;
+    margin: 10px;
+}
+.valores:hover{
+    background-color: rgb(242, 203, 156);
+}
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    color: #e3f2fd;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.foot-info{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+}
+
+
+
+a {
+  color: rgb(0, 99, 228);
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 1em;
+  display: inline-block;
+  font-weight: bold;
+  padding: .3em;
+  margin-left: -.5em;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+a:before, a:after {
+  position: absolute;
+  content: '';
+  border-bottom: 3px solid rgb(0, 99, 228);
+  border-radius: 1em;
+  bottom: .3em;
+  transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+a:before {
+  width: 1em;
+  transform-origin: left;
+}
+
+a:after {
+  width: 82%;
+  left: 1em;
+  transform: translateX(110%);
+}
+
+a:hover:before {
+  transform: scaleX(0.3);
+}
+
+a:hover:after {
+  transform: translateX(0);
+}
+
