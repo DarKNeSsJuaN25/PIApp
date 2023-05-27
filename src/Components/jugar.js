@@ -3,32 +3,31 @@ import Footer from "./footer";
 import NavBar from "./navbar";
 import { useState } from "react";
 import '../styles/jugar.css'
-import {v4 as uuidv4} from 'uuid'
 import Carta from "./cartas";
 
 const Jugar = () => {
-    const [mostrarSpan, setmostrarSpan] = useState(false)
-    const lista = ['1a','2a','3a']
-    const [cartas,setCartas] = useState([])
+    const [mensaje,setMensaje] =  useState('')
+    const d_default = {'1a':{presupuesto : 10, desarrollo : 20},'2a':{presupuesto : 12, desarrollo : 15}}
+    const [diccionario,setdiccionario] = useState({})
     const [input, setInput] = useState('')
+    const [presupuesto, setpresupuesto] = useState(50000)
 
     const changeInput = e => {
         setInput(e.target.value)
     }
     const enviarCodigo = e =>{
-        if(lista.includes(input)){
-            setmostrarSpan(false)
-            const carta_final = {
-                id: uuidv4(),
-                nombre: input,
-                foto: "Aun no hay xd"
-            }
-            console.log(carta_final)
-            const cartas_usuario = [carta_final, ... cartas]
-            setCartas(cartas_usuario)        
+        if(d_default.hasOwnProperty(input) && !diccionario.hasOwnProperty(input)){
+            const dic_final = Object.assign({}, diccionario, {[input]: d_default[input]})
+            setdiccionario(dic_final)
+            setMensaje("Agregado correctamente")
+            setpresupuesto(presupuesto-d_default[input].presupuesto)
+        }
+        else if(diccionario.hasOwnProperty(input)){
+            setMensaje("Ya fue agregado")
+            console.log("Ya fue anidido")
         }
         else{
-            setmostrarSpan(true)
+            setMensaje("Error: Codigo no valido")
             console.log("Error")
         }
     }
@@ -38,22 +37,28 @@ const Jugar = () => {
             <NavBar/>
             <section className="jugar-contenedor-1">
                 <section className="registro">
+                    <h2>Cartas agregadas</h2>
                     {
-                        cartas.map((carta) =>
+                        Object.keys(diccionario).map(dicc =>
                             <Carta 
-                                key = {carta.id}
-                                id = {carta.id}
-                                nombre = {carta.nombre}
+                                key = {dicc}
+                                id = {dicc}
+                                nombre = {dicc}
+                                presupuesto = {diccionario[dicc].presupuesto}
+                                desarrollo = {diccionario[dicc].desarrollo}
                             />
                         )
                     }
                 </section>
                 <section className="input">
-                    <div>
-                    <input placeholder="Ingrese el codigo de la carta" type='text' value={input} onChange={changeInput}></input>
-                    <button placeholder="Enviar" onClick={enviarCodigo} ></button>
+                    <div className="input-1">
+                        <input placeholder="Ingrese el codigo de la carta" type='text' value={input} onChange={changeInput}></input>
+                        <button placeholder="Enviar" onClick={enviarCodigo} >Enviar</button>
                     </div>
-                    {mostrarSpan && <span>Error! Codigo no existe</span>}
+                    <span className="span">{mensaje}</span>
+                    <div className="acumulacion">
+                        Presupuesto actual: {presupuesto}
+                    </div>
                 </section>
             </section>
             <Footer/>
