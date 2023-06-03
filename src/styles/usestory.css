@@ -1,0 +1,27 @@
+
+.producto{
+    text-align: left;
+}
+.seleccionar-informacion{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    margin-left: 10rem;
+    
+}
+.seleccionar-informacion> p{
+    font-weight: bold;
+}
+.seleccionar-carta{
+    height: auto;
+    width: 10rem;
+    border-radius: 10px;
+    margin-left: 5rem;
+}
+
+.personajes-cartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
