@@ -4,14 +4,13 @@ import NavBar from "./navbar";
 import { useState } from "react";
 import '../styles/jugar.css'
 import Carta from "./cartas";
-
+import Modal from "./modales";
 const Jugar = () => {
     const [mensaje,setMensaje] =  useState('')
     const d_default = {'1a':{presupuesto : 10, desarrollo : 20},'2a':{presupuesto : 12, desarrollo : 15}}
     const [diccionario,setdiccionario] = useState({})
     const [input, setInput] = useState('')
     const [presupuesto, setpresupuesto] = useState(50000)
-
     const changeInput = e => {
         setInput(e.target.value)
     }
@@ -31,37 +30,33 @@ const Jugar = () => {
             console.log("Error")
         }
     }
+    const [cambiarModal, setModal] = useState(false)
 
     return(
         <>
-            <NavBar/>
-            <section className="jugar-contenedor-1">
-                <section className="registro">
-                    <h2>Cartas agregadas</h2>
-                    {
-                        Object.keys(diccionario).map(dicc =>
-                            <Carta 
-                                key = {dicc}
-                                id = {dicc}
-                                nombre = {dicc}
-                                presupuesto = {diccionario[dicc].presupuesto}
-                                desarrollo = {diccionario[dicc].desarrollo}
-                            />
-                        )
-                    }
-                </section>
-                <section className="input">
-                    <div className="input-1">
-                        <input placeholder="Ingrese el codigo de la carta" type='text' value={input} onChange={changeInput}></input>
-                        <button placeholder="Enviar" onClick={enviarCodigo} >Enviar</button>
-                    </div>
-                    <span className="span">{mensaje}</span>
-                    <div className="acumulacion">
-                        Presupuesto actual: {presupuesto}
-                    </div>
-                </section>
-            </section>
-            <Footer/>
+                <section className="tablero">
+                    <section className="navbar-1">
+                            <div>Dinero</div>
+                            <button className="comprar cartas"
+                            onClick={()=> setModal(true)}>
+                                Comprar cartas
+                            </button>
+                            <button className="eventos-generales">
+                                eventos
+                            </button>
+                            <button className="p">p</button>
+                            <button className="contador-turnos">turno</button>
+                    </section>
+                    <section className="tablero-principal">
+                        tablero
+                    </section>
+                </section>  
+                <Modal
+                    isopen = {cambiarModal}
+                    cambiarEstado = {setModal}
+                >
+
+                </Modal>
         </>
     )   
 }
