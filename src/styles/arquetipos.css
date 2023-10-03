@@ -1,14 +1,10 @@
 .arquetipos-cuadros{
     text-align: center;
-    border-radius: 20px;
-    border-color: #333333;
-    border: 3px solid #333333;
-    background-color:rgb(249, 205, 151);
     flex: 1 1 25%;
-    box-sizing: border-box;
     padding: 10px;
 }
-
-.arquetipos-cuadros:hover{
-    background-color: rgb(242, 203, 156);
+.arquetipos-cuadros > p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }

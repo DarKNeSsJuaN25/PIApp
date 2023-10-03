@@ -53,11 +53,12 @@
 .contenido > :nth-child(odd){
     border-right: 5px solid white;
 }
+/*
 .equipo > :nth-child(1){
     border-bottom: 5px solid white;
     padding-bottom: 5rem;
 }
-
+*/
 .info-persona{
     width: 60%;
 }

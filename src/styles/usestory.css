@@ -1,27 +1,27 @@
-h2,h3{
-    color: #e3f2fd;
-    margin: 0;
-    height: 70px;
-    padding-top: 10px;
-}
 
 .producto{
     text-align: left;
 }
-
-.contenido-personajes{
-    text-align: left;
+.seleccionar-informacion{
+    margin-top: 2.5rem;
     display: flex;
     flex-direction: row;
+    justify-content:flex-start;
+    margin-left: 10rem;
+    
 }
-.personajes-lista{
-    width: 75%;
+.seleccionar-informacion> p{
+    font-weight: bold;
+}
+.seleccionar-carta{
+    height: auto;
+    width: 10rem;
+    border-radius: 10px;
+    margin-left: 5rem;
 }
 
-.personajes-imagenes{
-
-}
-
-ul{
-    list-style: none;
+.personajes-cartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }

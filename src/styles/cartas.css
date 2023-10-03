@@ -1,9 +1,58 @@
 .carta{
     border: 2px white solid;
     width: 300px;
-    height: 200px;
-    margin-bottom: 2rem;
+    min-height: 200px;
+    height: auto;
+    margin: 2rem;
+    padding: 0.8rem;
 }
-.carta >h3{
+.carta > h3 {
     border-bottom: 2px white solid;
+}
+
+
+.carta > img{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px white solid;
+}
+
+
+.carta >p{
+    text-align: justify;
+}
+
+
+.carta-juego{
+    border: 2px black solid;
+    width: 20vw;
+    height: 30vh;
+    margin: 2rem;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.carta-juego > h3 {
+    border-bottom: 2px white solid;
+    height: auto;
+    width: auto;
+    font-size: 15px;
+}
+.carta-juego > img {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px white solid;
+    height: 100px;
+}
+.carta-juego >p{
+    text-align: justify;
+    width: auto;
+    height: auto;
+    font-size: 8px;
 }
